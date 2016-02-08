@@ -2,6 +2,22 @@ var fbURL = "https://www.facebook.com/Mezzopane-1540279952936461/";
 var twURL = "https://www.facebook.com/Mezzopane-1540279952936461/";
 var insURL = "https://www.facebook.com/Mezzopane-1540279952936461/";
 
+$("head").first().append('<script type="application/ld+json">' +
+	'{ '+
+	  '"@context" : "http://schema.org",' +
+	  '"@type" : "LocalBusiness",' +
+	  '"name" : "mezzopane",' +
+	  '"image" : "http://40.118.247.246/mezzopane/img/mezzopane.png",' +
+	  '"telephone" : "23154654654",' +
+	  '"address" : {' +
+	    '"@type" : "PostalAddress",' +
+	    '"streetAddress" : "Filadelfia 128 Col. Nápoles",' +
+	    '"addressLocality" : "Ciudad de México"' +
+	  '}' +
+	'}' +
+	'</script>');
+
+
 (function($){
   $(function(){
 
